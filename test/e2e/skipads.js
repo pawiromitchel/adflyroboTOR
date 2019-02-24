@@ -1,4 +1,4 @@
-var adfly_url = 'http://bluenik.com/14E';
+var adfly_url = 'http://keistaru.com/1JZc';
 
 module.exports = {
   'click skyp ads': function (browser) {

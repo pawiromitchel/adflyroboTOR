@@ -25,13 +25,13 @@ function startBot(){
   if(!pwd)
     return;
 
-    var command = shell.exec(tor+' -f '+MY_TORRC_FILE, {async:true,silent:true});
+    var command = shell.exec(tor+' -f '+MY_TORRC_FILE, {async:true,silent:false});
       command.stdout.on('data', function(data) {
       console.log(data);
       if(data.match('Bootstrapped 100%: Done')){
         // we are connected :)
         // start tedt
-        //shell.exec('npm start');
+        shell.exec('node loop_skip_ads.js');
         console.log('you can npw run test :)');
       }
     });
