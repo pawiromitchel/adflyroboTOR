@@ -1,8 +1,8 @@
 var shell = require('shelljs');
 var fs = require('fs');
 
-const VERSION = '7.0.8';
-const TOR_BROWSER_WGET_URL = 'https://www.torproject.org/dist/torbrowser/'+VERSION+'/tor-browser-linux64-'+VERSION+'_en-US.tar.xz';
+const VERSION = '8.0.6';
+const TOR_BROWSER_WGET_URL = 'https://dist.torproject.org/torbrowser/'+VERSION+'/tor-browser-linux64-'+VERSION+'_en-US.tar.xz';
 const filename_tor_browser = 'tor-browser-linux64-'+VERSION+'_en-US.tar.xz';
 
 function init(){
