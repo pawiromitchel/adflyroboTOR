@@ -25,7 +25,7 @@ function startBot(){
   if(!pwd)
     return;
 
-    var command = shell.exec(tor+' -f '+MY_TORRC_FILE, {async:true,silent:false});
+    var command = shell.exec(tor+' -f '+MY_TORRC_FILE, {async:true,silent:true});
       command.stdout.on('data', function(data) {
       console.log(data);
       if(data.match('Bootstrapped 100%: Done')){
